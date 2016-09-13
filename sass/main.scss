@@ -1,0 +1,153 @@
+// Landing Page
+
+.landingBackground {
+	margin: 0;
+	background-repeat: no-repeat;
+	background-color: white;
+	background-size: cover;
+	height: 100vh;
+	// width: 100vw;
+	z-index: 99999;
+}
+
+.landingHide {
+	overflow-y: hidden;
+	max-height: 100vh;
+	transition-timing-function: cubic-bezier(0, 1, 0.5, 1);
+	transition: all linear .4s;
+  opacity:1;
+}
+
+.landingHide.ng-hide {
+	  max-height: 0;
+}
+
+//holds overlays
+
+.landingContainer {
+	margin: 0 auto;
+	max-width: 60%;
+	display: flex;
+	flex-direction: column;
+	align-content: center;
+	height: 100vh;
+	img {
+		align-self: center;
+		max-height: 100vh;
+		margin-top: -2rem;
+	}
+	button {
+		padding-bottom: 0;
+		display: flex;
+		border: none;
+		align-content: center;
+		background-color: transparent;
+		align-self: center;
+		max-width: 30%;
+		h6 {
+			margin: 0;
+			font-size: 1.5rem;
+			font-family: 'Nothing You Could Do', cursive;
+			display: inline-block;
+			align-self: center;
+		}
+		i {
+			align-self: center;
+			opacity: .75;
+		}
+	}
+}
+
+// About and Port containers
+
+.aboutRow {
+	position: absolute;
+}
+
+.aboutPortContainer {
+	width: 100%;
+	margin-bottom: 0;
+		.landingPortfolio {
+			background-color: #686C75;
+			height: 100vh;
+				img {
+					margin-left: 12%;
+					margin-right: 12%;
+					max-width: 75%;
+				}
+		}
+		.landingAbout:hover,
+		.landingPortfolio:hover {
+			border: 2px black solid;
+		}
+
+		.landingAbout {
+			background-color: #F2EDEB;
+			height: 100vh;
+			position: relative;
+				img {
+					position: absolute;
+					bottom: 0;
+				}
+				h1 {
+					margin: 0 auto;
+				}
+		}
+}
+
+//Nav
+.navInclude {
+	z-index: 9999;
+}
+
+.navContainer {
+	position: fixed;
+	height: 100vh;
+	background-color: salmon;
+}
+
+.leftNav {
+	left: 0 !important;
+}
+
+.rightNav {
+	right: 0 !important;
+}
+
+//Portfolio
+
+.listProjects {
+	img {
+		max-width: 90%;
+		max-height: 35rem;
+	}
+}
+
+// Animations
+
+@keyframes slideDownLeft {
+  from {  }
+  to { bottom:0; }
+}
+
+@keyframes slideDownRight {
+  from {  }
+  to { bottom:0; }
+}
+
+@-webkit-keyframes slideDown {
+  from { opacity:1; }
+  to { bottom:0; }
+}
+
+
+
+
+
+
+
+
+
+
+
+

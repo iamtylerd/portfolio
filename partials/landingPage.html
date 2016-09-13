@@ -1,0 +1,16 @@
+<div ng-mouse-wheel-down="goToHome()" class="landingHide landingBackground slideUp" ng-show="landing">
+	<div class="landingContainer">
+		<img src="app/assets/landingLogo.png"/>
+		<button type="button" ng-click="goToHome()" class=""><h6>Scroll</h6><i class="material-icons">arrow_downward</i></button>
+	</div>
+</div>
+<div class="row aboutPortContainer col s12">
+		<div class="landingAbout col s6 valign-wrapper" ng-click="toggleAbout()">
+			<h1 class="valign center">About Me</h1>
+			<img class="responsive-img" src="app/assets/about.png"/>
+		</div>
+		<div class="landingPortfolio col s6" ng-click="togglePort()">
+			<img class="responsive-img" src="app/assets/techsmall.png"/>
+			<h1 class="center">View my Portfolio</h1>
+	</div>
+</div>
